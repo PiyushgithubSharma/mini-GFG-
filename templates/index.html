@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balanced Bites</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #f8f9fa;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .hero {
+        background-image: url('hero-image.jpg');
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .featured {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .featured h2 {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: #ff6600;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .food-category {
+        margin-bottom: 20px;
+    }
+
+    .food-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .food-block a {
+        display: block;
+        width: 125px;
+        height: 125px;
+        background-color: #f8f9fa;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .food-block a:hover {
+        background-color: #e9ecef;
+    }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>Balanced Bites</h1>
+        <div class="search-bar" style="margin-left: 390px; margin-bottom: 20px;">
+            <form class="form-inline" action="/search" method="get">
+                <input class="form-control mr-sm-2" name="q" type="text" placeholder="Search..." required>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <nav style="margin-left: 150px;">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Medicians</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Vegetables</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Other Foods</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="container content">
+        <hr>
+        <h2 style="margin-left: 280px;">Explore Nutritional Information</h2>
+        <p style="margin-left: 200px;">Discover the nutritional values of various fruits, vegetables, and other foods.</p>
+        <div  style="margin-left: 150px;">
+            <hr>
+            <div class="food-category">
+                <h3>Medicians</h3>
+                <div class="food-block">
+                    <a class="btn btn-outline-primary" href="/apple" target="_blank"><img src="/static/GfgImages/PCM.jpg" style="height: auto; width: 90px;">Paracetamole</a>
+                    <a class="btn btn-outline-primary" href="/banana"><img src="/static/GfgImages/Dolo.jpg" style="height: auto; width: 90px;">DOLO </a>
+                    <a class="btn btn-outline-primary" href="/Orange"><img src="/static/GfgImages/Brofen.jpg" style="height: auto; width: 90px;">Brofen</a>
+                    <a class="btn btn-outline-primary" href="/Mango"><img src="/static/GfgImages/apex.jpg" style="height: auto; width: 90px;">apex</a>
+                    <a class="btn btn-outline-primary" href="/Strawberry"><img src="/static/GfgImages/Algina.jpg" style="height: auto; width: 90px;">Algina</a>
+                    <a class="btn btn-outline-primary" href="/Watermelon"><img src="/static/GfgImages/lividus.jpg" style="height: auto; width: 90px;">lividus</a>
+                   
+                </div>
+            </div>
+            <hr>
+            <div class="food-category">
+                <h3>Nutrition drink and suppliments</h3>
+                <div class="food-block">
+                    <a class="btn btn-outline-primary" href="/Spinach"><img src="/static/GfgImages/Patangali.jpg" style="height: auto; width: 90px;">Pantangali</a>
+                    <a class="btn btn-outline-primary" href="/Carrot"><img src="/static/GfgImages/Kapiva.jpg" style="height: auto; width: 90px;">Kapiva</a>
+                    <a class="btn btn-outline-primary" href="/Broccoli"><img src="/static/GfgImages/Amla.jpg" style="height: auto; width: 90px;">Amla</a>
+                    <a class="btn btn-outline-primary" href="/Tomato"><img src="/static/GfgImages/Vineger.jpg" style="height: auto; width: 90px;">Vineger</a>
+                    <a class="btn btn-outline-primary" href="/Cucumber"><img src="/static/GfgImages/DiafreeJuice.jpg" style="height: auto; width: 90px;">DiaFree_juice</a>
+                    <a class="btn btn-outline-primary" href="/Bell Pepper"><img src="/static/GfgImages/aloe.jpg" style="height: auto; width: 90px;">aloe</a>
+                 
+                </div>
+            </div>
+            <div class="food-category">
+                <hr>
+                <h3>Other Foods</h3>
+                <div class="food-block">
+                    <a class="btn btn-outline-primary" href="/Salmon"><img src="/static/GfgImages/babyPowder.jpg" style="height: auto; width: 90px;">baby_powder</a>
+                    <a class="btn btn-outline-primary" href="/Cheese"><img src="/static/GfgImages/face_wash.jpg" style="height: auto; width: 90px;">Face_wash</a>
+                    <a class="btn btn-outline-primary" href="/Rice"><img src="/static/GfgImages/cream.jpg" style="height: auto; width: 90px;">cream</a>
+                    <a class="btn btn-outline-primary" href="/Pasta"><img src="/static/GfgImages/mama-earth.jpg" style="height: auto; width: 90px;">mama-earth</a>
+                    <a class="btn btn-outline-primary" href="/Beans"><img src="/static/GfgImages/face_cream.jpg" style="height: auto; width: 90px;">face-cream</a>
+                    <a class="btn btn-outline-primary" href="/Burger"><img src="/static/GfgImages/Ganier.jpg" style="height:90px; width: 90px;"> Ganier</a>
+                 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container">
+        <p>&copy; 2024 Nutrition Facts</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ food.Food }} Attributes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+
+    /* Resetting default margin and padding */
+    body, h1, h2, h3, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .nutrition-info {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nutrition-info h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">{{ food.Food }} Attributes</h1>
+        <img class="food-image img-fluid mt-3" src="{{ url_for('static', filename='images/' + food.Food.lower() + '_image.jpg') }}" alt="{{ food.Food }}" style="width: 300px; height: auto;">
+
+       
+        <div class="nutrition-info mt-5">
+            <h3>Nutritional Information</h3>
+            <ul class="list-unstyled">
+                <li>Protein: {{ food.Protein }}</li>
+                <li>Carbs: {{ food.Carbohydrates }}</li>
+                <li>Fats: {{ food.Fat }}</li>
+                <li>Calories: {{ food.Calories }}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ food.Food }} Attributes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    /* Resetting default margin and padding */
+    body, h1, h2, h3, ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Basic styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .nutrition-info {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .medicine-info {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .medicine-section {
+        margin-top: 20px;
+    }
+
+    .medicine-section h3 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .box {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+    .price-box {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">{{ food.Food }} Attributes</h1>
+        <!-- Large image of the food -->
+        <img class="food-image img-fluid mt-3" src="{{ url_for('static', filename='images/' + food.Food.lower() + '_image.jpg') }}" alt="{{ food.Food }}" style="width: 300px; height: auto;">
+
+        <!-- Nutritional Information -->
+        <div class="nutrition-info mt-5">
+            <h3>Nutritional Information</h3>
+            <ul class="list-unstyled">
+                <li>Protein: {{ food.Protein }}</li>
+                <li>Carbs: {{ food.Carbohydrates }}</li>
+                <li>Fats: {{ food.Fat }}</li>
+                <li>Calories: {{ food.Calories }}</li>
+            </ul>
+        </div>
+
+        <!-- Medicine Information Boxes -->
+        <div class="medicine-section">
+            <h3 class="mt-5">Medicine Information</h3>
+
+            <!-- Description Box -->
+            <div class="box">
+                <h4>Description</h4>
+                <p>{{ food.Description }}</p>
+            </div>
+
+            <!-- Pros Box -->
+            <div class="box">
+                <h4>Pros</h4>
+                <ul class="list-unstyled">
+                    <li>{{ food.Pros[0] }}</li>
+                    <li>{{ food.Pros[1] }}</li>
+                    <li>{{ food.Pros[2] }}</li>
+                </ul>
+            </div>
+
+            <!-- Cons Box -->
+            <div class="box">
+                <h4>Cons</h4>
+                <ul class="list-unstyled">
+                    <li>{{ food.Cons[0] }}</li>
+                    <li>{{ food.Cons[1] }}</li>
+                    <li>{{ food.Cons[2] }}</li>
+                </ul>
+            </div>
+
+            <!-- Price Box -->
+            <div class="box price-box">
+                Price: ${{ food.Price }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
